@@ -6,12 +6,13 @@ int main()
 	char input[20] = {0};
 	system("shutdown -s -t 60");
 	while (1)
-	{
-		printf("µçÄÔ½«ÔÚÒ»·ÖÖÓÄÚ¹Ø»ú£¬Èç¹ûÊäÈë£»á¯Ë³·åÊÇÎÒµù£¬¾ÍÈ¡Ïû¹Ø»ú\n");
+	{	char arr[20] = "";
+	 	scanf("%s", arr);
+		printf("ç”µè„‘å°†åœ¨ä¸€åˆ†é’Ÿå†…å…³æœºï¼Œå¦‚æœè¾“å…¥ï¼›%sæ˜¯æˆ‘çˆ¹ï¼Œå°±å–æ¶ˆå…³æœº\n", arr);
 		scanf ("%s",input);
-		if(0 == strcmp(input,"á¯Ë³·åÊÇÎÒµù"))
+		if(0 == strcmp(input, arr))
 		{
-			printf("ÒÑÈ¡Ïû¹Ø»ú");
+			printf("å·²å–æ¶ˆå…³æœº");
 			system("shutdown -a");
 			break; 
 		}
